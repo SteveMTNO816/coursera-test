@@ -60,11 +60,11 @@ for (var i = 0; i < names.length; i++) {
   // name in the loop.
 
   if (firstLetter === 'j') {
-    console.log(names[i]);
-    // byeSpeaker.speak(names[i]);
+    // console.log(names[i]);
+    byeSpeaker.speak(names[i]);
   } else {
-    console.log(names[i]);
-    // helloSpeaker.speak(names[i]);
+    // console.log(names[i]);
+    helloSpeaker.speak(names[i]);
   }
 }
 
