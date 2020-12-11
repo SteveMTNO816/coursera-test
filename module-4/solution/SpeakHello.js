@@ -3,11 +3,11 @@
 
 (function (window) {
     var helloSpeaker = {};
-    helloSpeaker.names = names[i];
+    // helloSpeaker.names = names[i];
 	var speakWord = "Hello";
 
-	helloSpeaker.speak = function () {
-	  console.log(speakWord + " " + helloSpeaker.names);
+	helloSpeaker.speak = function (name) {
+	  console.log(speakWord + " " + name);
 	}
 
 	window.helloSpeaker = helloSpeaker;

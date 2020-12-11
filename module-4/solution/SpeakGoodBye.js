@@ -6,11 +6,11 @@
 
 (function (window) {
     var byeSpeaker = {};
-    byeSpeaker.names = names[i];
+    // byeSpeaker.names = names[i];
 	var speakWord = "Good Bye";
 
-	byeSpeaker.speak = function () {
-	  console.log(speakWord + " " + byeSpeaker.names);
+	byeSpeaker.speak = function (name) {
+	  console.log(speakWord + " " + name);
 	}
 	
 	window.byeSpeaker = byeSpeaker;
