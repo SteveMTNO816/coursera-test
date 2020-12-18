@@ -1,0 +1,250 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.borders {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+#collapsable-nav {
+  padding: 0;
+}
+
+.container .jumbotron {
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+}
+
+h3 {
+  margin: 0 0 20px;
+}
+
+#header-nav {
+  background-color: #9e6f6f;
+  border-radius: 0;
+  border: 0;
+}
+
+#logo-img {
+  background: url('../images/restaurant-logo_large.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+}
+
+#main-content {
+  min-height: 1000px;
+    background-color: #999;
+    padding-bottom: 50px;
+}
+
+#nav-list {
+  margin: 0;
+}
+
+#nav-list a {
+  color: #fff;
+  text-align: center;
+}
+
+#nav-list a:hover {
+  background: #E7E7E7;
+  color: #61122f;
+}
+
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar {
+  border-radius: 0;
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 10px;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+.navbar-brand p { /* Kosher cert */
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+
+.navbar-brand p span { /* Star-K */
+  vertical-align: middle;
+}
+
+.navbar-default {
+    background-color: #9e6f6f;
+    border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-toggle .icon-bar { 
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar {
+    background-color: #9e6f6f;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -57px;
+}
+
+.navbar-toggle {
+  margin-top: 26px;
+}
+
+#phone {
+  margin-top: 5px;
+} 
+
+#phone a { /* Phone number */
+  text-align: right;
+  padding-bottom: 0;
+}
+
+#phone div { /* We Deliver */
+  color: #557c3e;
+  text-align: right;
+  padding-right: 15px;
+}
+
+section {
+    border: 1px solid black;
+    padding: 30px;
+    background-color: #fff;
+    color: #000;
+    width: 90%;
+    margin: 20px auto;
+  }
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .container .jumbotron {
+    background: url('../images/jumbotron_1200.jpg') no-repeat;
+    height: 675px;
+  }
+
+  #header-nav {
+    background-color: #9e6f6f;
+    border-radius: 0;
+    border: 0;
+    height: 90px;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  #header-nav {
+    background-color: #9e6f6f;
+    border-radius: 0;
+    border: 0;
+    height: 90px;
+  }
+
+  #logo-img {
+    background: url('../images/restaurant-logo_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+
+  .container .jumbotron {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 558px;
+  }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .container .jumbotron {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 432px;
+  }
+
+  #header-nav {
+      background-color: #9e6f6f;
+      border-radius: 0;
+      border: 0;
+      height: 90px;
+   }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+
+}
